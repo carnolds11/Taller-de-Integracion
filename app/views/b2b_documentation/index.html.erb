@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grupo 1 - Taller de Integración</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>GRUPO 1</h1>
+                        <p>Aquí encontrarás la documentación detallada de nuestro sistema B2B.</p>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="page-header">
+  </div>
+  
+  <!-- Sign-In -->
+  <div class="panel panel-default" data-scroll-index="1">
+    <div class="panel-heading">
+      <h3 class="panel-title">Registro</h3>
+    </div>
+    <div class="panel-body">
+      <p><strong>Descripción:</strong> Crear usuario en plataforma e-commerce</p>
+      <p><strong>Method:</strong> <code>POST</code></p>
+      <p><strong>Url:</strong> <code>/api/new_user/</code></p>
+      <p><strong>Parámetros:</strong>
+      <code>
+          user: (string), 
+          pass: (string)
+      </code>
+      </p>
+      
+      <p><strong>Respuesta:</strong></p>
+      <pre><code>
+
+        Status Code: 201 CREATED
+        {
+            "success": true,
+            "message": "Usuario nuevo creado exitosamente",
+            "token": token
+        }
+     
+        Status Code: 400 BAD REQUEST
+        {
+            "user":
+            [
+                "This field is required."
+            ],
+            "pass":
+            [
+                "This field is required."
+            ]
+        }
+      </code></pre>
+    </div>
+  </div>
+  
+
+  <!-- Obtener Token -->
+  <div class="panel panel-default" data-scroll-index="1">
+    <div class="panel-heading">
+      <h3 class="panel-title">Obtener Token</h3>
+    </div>
+    <div class="panel-body">
+      <p><strong>Descripción:</strong> A partir de usuario y contraseña devuelve token asociado a cuenta.</p>
+      <p><strong>Method:</strong> <code>GET</code></p>
+      <p><strong>Url:</strong> <code>/api/get_token/</code></p>
+      <p><strong>Parámetros:</strong>
+      <code>
+          user: (string), 
+          pass: (string)
+      </code>
+      </p>
+      
+      <p><strong>Respuesta:</strong></p>
+      <pre><code>
+        Status Code: 200 OK
+        {
+            "token": token
+        }
+     
+        Status Code: 400 BAD REQUEST
+        {
+            "user":
+            [
+                "This field is required."
+            ],
+            "pass":
+            [
+                "This field is required."
+            ]
+        }
+      
+        Status Code: 400 BAD REQUEST
+        {
+            "non_field_errors":
+            [
+                "Error"
+            ]
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <!-- Ingreso de Orden -->
+  <div class="panel panel-default" data-scroll-index="0">
+    <div class="panel-heading">
+      <h3 class="panel-title">Ingresar Order</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notificar el ingreso de una nueva orden al sistema.</p>
+        <p><strong>Method:</strong> <code>POST</code></p>
+        <p><strong>URLl:</strong> <code>/api/new_order/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            order_id: (string),
+            token: (string)
+        </code>
+        </p>
+        
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "La orden de compra ha sido recibida."
+          }
+        
+
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "order_id":
+              [
+                  "This field is required."
+              ],
+          }
+
+        </code></pre>
+      </div>
+    </div>
+
+  <!-- Orden Aceptada -->
+  <div class="panel panel-default" data-scroll-index="3">
+    <div class="panel-heading">
+      <h3 class="panel-title">Notificacion de Orden Aceptada</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notifica al cliente cuando la orden de compra fue aceptada. </p>
+        <p><strong>Method:</strong> <code>PUT</code></p>
+        <p><strong>Url:</strong> <code>/api/order_accepted/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            order_id: (string) 
+        </code>
+        </p>
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "OK"
+          }
+        
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "order_id":
+              [
+                  "This field is required."
+              ],
+          }
+        </code></pre>
+      </div>
+    </div>
+
+    <!-- Orden Cancelada -->
+  <div class="panel panel-default" data-scroll-index="4">
+    <div class="panel-heading">
+      <h3 class="panel-title">Avisar que orden fue cancelada</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notifica cuando una orden fue cancelada.</p>
+        <p><strong>Method:</strong> <code>DELETE</code></p>
+        <p><strong>Url:</strong> <code>/api/order_canceled/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            order_id: (string), 
+            token: (string)
+        </code>
+        </p>
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "OK"
+          }
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "order_id":
+              [
+                  "This field is required."
+              ],
+          }
+        </code></pre>
+      </div>
+    </div>
+  
+  <!-- Orden Rechazada -->
+  <div class="panel panel-default" data-scroll-index="5">
+    <div class="panel-heading">
+      <h3 class="panel-title">Avisar que orden fue rechazada</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notifica cuando una orden fue rechazada.</p>
+        <p><strong>Method:</strong> <code>DELETE</code></p>
+        <p><strong>Url:</strong> <code>/api/order_rejected/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            order_id: (string), 
+        </code>
+        </p>
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "OK"
+          }
+        
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "order_id":
+              [
+                  "This field is required."
+              ],
+          }
+        </code></pre>
+      </div>
+    </div>
+
+
+     <!-- Enviar Factura -->
+  <div class="panel panel-default" data-scroll-index="0">
+    <div class="panel-heading">
+      <h3 class="panel-title">Enviar Factura</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notificar la creacion de una factura al cliente.</p>
+        <p><strong>Method:</strong> <code>POST</code></p>
+        <p><strong>URLl:</strong> <code>/api/new_invoice/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            invoice_id: (string),
+        </code>
+        </p>
+        
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "La factura de compra ha sido recibida exitosamente."
+          }
+        
+
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "invoice_id":
+              [
+                  "This field is required."
+              ],
+          }
+
+        </code></pre>
+      </div>
+    </div>
+
+
+     <!-- Factura Rechazada -->
+  <div class="panel panel-default" data-scroll-index="5">
+    <div class="panel-heading">
+      <h3 class="panel-title">Rechazar Factura</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Permite rechazar cuando una factura de compra fue rechazada.</p>
+        <p><strong>Method:</strong> <code>DELETE</code></p>
+        <p><strong>Url:</strong> <code>/api/invoice_rejected/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            invoice_id: (string), 
+        </code>
+        </p>
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "OK"
+          }
+        
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "invoice_id":
+              [
+                  "This field is required."
+              ],
+          }
+        </code></pre>
+      </div>
+    </div>
+
+
+    <!-- Pago  -->
+  <div class="panel panel-default" data-scroll-index="6">
+    <div class="panel-heading">
+      <h3 class="panel-title">Avisar que factura fue pagada</h3>
+    </div>
+      <div class="panel-body">
+        <p><strong>Descripción:</strong> Notificar cuando una factura fue pagada</p>
+        <p><strong>Method:</strong> <code>POST</code></p>
+        <p><strong>Url:</strong> <code>/api/invoice_paid/</code></p>
+        <p><strong>Parámetros:</strong>
+        <code>
+            invoice_id: (string),
+            token: (string)
+        </code>
+        </p>
+        <p><strong>Respuesta:</strong></p>
+        <pre><code>
+          Status Code: 200 OK
+          {
+              "success": true,
+              "message": "OK"
+          }
+
+          Status Code: 400 BAD REQUEST
+          {
+              "success": false,
+              "invoice_id":
+              [
+                  "This field is required."
+              ],
+              "token":
+              [
+                  "This field is required."
+              ],
+          }
+        </code></pre>
+      </div>
+    </div>
+  </div>
+    </div>
+    <footer class="footer">
+      <div class="container" style="text-align: center;">
+        <p class="text-muted" style="margin-top:20px;"> Grupo 1 - Taller de Integracion 2015</p>
+      </div>
+    </footer>            
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
