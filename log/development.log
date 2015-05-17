@@ -14857,3 +14857,806 @@ ActionController::RoutingError (No route matches [GET] "/api/js/bootstrap.min.js
   Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
   Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
   Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (825.6ms)
+
+
+Started GET "/register_group" for 127.0.0.1 at 2015-05-17 16:30:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/register_group"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (180.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (51.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (80.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1442.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (359.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (882.6ms)
+
+
+Started GET "/register_group?user=yo&pass=123" for 127.0.0.1 at 2015-05-17 16:31:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/register_group"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (192.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1125.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (315.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (670.1ms)
+
+
+Started GET "/api/register_group?user=yo&pass=123" for 127.0.0.1 at 2015-05-17 16:31:13 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo", "pass"=>"123"}
+  [1m[35mB2bUser Load (0.3ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "b2b_users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["username", "yo"], ["password", "123"], ["created_at", "2015-05-17 19:31:13.989330"], ["updated_at", "2015-05-17 19:31:13.989330"]]
+  [1m[36m (47.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 51.0ms)
+
+NameError (undefined local variable or method `asda' for #<ApiController:0xb4131cbc>):
+  app/controllers/api_controller.rb:37:in `register_group'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (367.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (333.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (699.4ms)
+
+
+Started PUT "/api/console/repl_sessions/fdd3e978b63e033e50283e57f608eb76" for 127.0.0.1 at 2015-05-17 16:31:20 -0300
+
+
+Started GET "/api/register_group?user=yo&pass=123" for 127.0.0.1 at 2015-05-17 16:32:18 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo", "pass"=>"123"}
+  [1m[35mB2bUser Load (8.2ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 24ms (Views: 0.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/register_group?user=yo2&pass=123" for 127.0.0.1 at 2015-05-17 16:32:29 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo2", "pass"=>"123"}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "b2b_users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "yo2"], ["password", "123"], ["created_at", "2015-05-17 19:32:29.907667"], ["updated_at", "2015-05-17 19:32:29.907667"]]
+  [1m[35m (20.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 23.8ms)
+
+NoMethodError (undefined method `encode' for Base64:Module):
+  app/controllers/api_controller.rb:37:in `register_group'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (360.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (334.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (714.9ms)
+
+
+Started GET "/api/register_group?user=yo3&pass=123" for 127.0.0.1 at 2015-05-17 16:33:12 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo3", "pass"=>"123"}
+  [1m[36mB2bUser Load (8.5ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "b2b_users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "yo3"], ["password", "123"], ["created_at", "2015-05-17 19:33:14.305003"], ["updated_at", "2015-05-17 19:33:14.305003"]]
+  [1m[35m (42.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 55.3ms)
+
+NoMethodError (undefined method `encode' for Base64:Module):
+  app/controllers/api_controller.rb:39:in `register_group'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (356.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (328.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (682.9ms)
+
+
+Started GET "/api/register_group?user=yo3&pass=123" for 127.0.0.1 at 2015-05-17 16:33:42 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo3", "pass"=>"123"}
+  [1m[36mB2bUser Load (8.3ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 34ms (Views: 7.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/api/register_group?user=yo4&pass=123" for 127.0.0.1 at 2015-05-17 16:33:46 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo4", "pass"=>"123"}
+  [1m[35mB2bUser Load (0.6ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "b2b_users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["username", "yo4"], ["password", "123"], ["created_at", "2015-05-17 19:33:46.469809"], ["updated_at", "2015-05-17 19:33:46.469809"]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 13.7ms)
+
+NoMethodError (undefined method `encode' for Base64:Module):
+  app/controllers/api_controller.rb:39:in `register_group'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (349.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (335.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (715.4ms)
+
+
+Started GET "/api/register_group?user=yo5&pass=123" for 127.0.0.1 at 2015-05-17 16:39:19 -0300
+Processing by ApiController#register_group as HTML
+  Parameters: {"user"=>"yo5", "pass"=>"123"}
+  [1m[35mB2bUser Load (9.9ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 11.6ms)
+
+NameError (undefined local variable or method `fsas' for #<ApiController:0xb4add9dc>):
+  app/controllers/api_controller.rb:40:in `register_group'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (358.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (333.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (716.5ms)
+
+
+Started PUT "/api/console/repl_sessions/b1531b92b0d3a21e8e925b4a8ab18fcc" for 127.0.0.1 at 2015-05-17 16:39:27 -0300
+
+
+Started PUT "/api/register_group?user=nuevo&pass=nuevo" for 127.0.0.1 at 2015-05-17 16:46:04 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/api/register_group"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (308.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1366.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xb0c190c @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xb0c1768 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xb0c1c40 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group?user=nuevo&pass=nuevo" for 127.0.0.1 at 2015-05-17 16:46:10 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"user"=>"nuevo", "pass"=>"nuevo", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[36mB2bUser Load (22.0ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "b2b_users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "nuevo"], ["password", "nuevo"], ["created_at", "2015-05-17 19:46:10.572104"], ["updated_at", "2015-05-17 19:46:10.572104"]]
+  [1m[35m (14.1ms)[0m  commit transaction
+Completed 201 Created in 99ms (Views: 3.0ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/api/get_token?user=nuevo&pass=nuevo" for 127.0.0.1 at 2015-05-17 16:47:00 -0300
+Processing by ApiController#get_token as */*
+  Parameters: {"user"=>"nuevo", "pass"=>"nuevo", "api"=>{}}
+  [1m[36mB2bUser Load (6.6ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/get_token?new_order=12&token=token%22:%22bnVldm9udWV2bw==\n" for 127.0.0.1 at 2015-05-17 16:47:36 -0300
+Processing by ApiController#get_token as */*
+  Parameters: {"new_order"=>"12", "token"=>"token\":\"bnVldm9udWV2bw==\\n", "api"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/get_token?new_order=12&token=token%22:%22bnVldm9udWV2bw==\n" for 127.0.0.1 at 2015-05-17 16:47:44 -0300
+Processing by ApiController#get_token as */*
+  Parameters: {"new_order"=>"12", "token"=>"token\":\"bnVldm9udWV2bw==\\n", "api"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/new_order?order_id=12&token=token%22:%22bnVldm9udWV2bw==\n" for 127.0.0.1 at 2015-05-17 16:48:01 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"token\":\"bnVldm9udWV2bw==\\n", "api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant ApiController::User):
+  app/controllers/api_controller.rb:107:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (500.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xb0c190c @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xb0c1768 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xb0c1c40 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/new_order?order_id=12&token=token%22:%22bnVldm9udWV2bw==\n" for 127.0.0.1 at 2015-05-17 16:48:47 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"token\":\"bnVldm9udWV2bw==\\n", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[35mB2bUser Load (7.9ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 32ms (Views: 0.5ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/new_order?order_id=12&token=token%22:%22bnVldm9udV2bw==\n" for 127.0.0.1 at 2015-05-17 16:48:54 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"token\":\"bnVldm9udV2bw==\\n", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 8ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/new_order?order_id=12&token=bnVldm9udV2bw==\n" for 127.0.0.1 at 2015-05-17 16:49:07 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"bnVldm9udV2bw==\\n", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 5ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/new_order?order_id=12&token=bnVldm9udV2bw==\n" for 127.0.0.1 at 2015-05-17 16:49:40 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"bnVldm9udV2bw==\\n", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[36mB2bUser Load (7.9ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 9.6ms)
+
+NameError (undefined local variable or method `sfs' for #<ApiController:0xb5434134>):
+  app/controllers/api_controller.rb:113:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (320.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xb0c190c @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xb0c1768 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xb0c1c40 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/api/new_order?order_id&token=sas" for 127.0.0.1 at 2015-05-17 16:50:39 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>nil, "token"=>"sas"}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/new_order?order_id=67&token=sas" for 127.0.0.1 at 2015-05-17 16:50:47 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"sas"}
+  [1m[35mB2bUser Load (6.9ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 8.1ms)
+
+NameError (undefined local variable or method `asd' for #<ApiController:0xb4baa478>):
+  app/controllers/api_controller.rb:113:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (371.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (333.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (708.9ms)
+
+
+Started PUT "/api/console/repl_sessions/cd1bf07f26f47e3db45c2756b2da02f9" for 127.0.0.1 at 2015-05-17 16:50:55 -0300
+
+
+Started GET "/api/new_order?order_id=67&token=sas" for 127.0.0.1 at 2015-05-17 16:51:18 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"sas"}
+  [1m[36mB2bUser Load (10.5ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 41ms (Views: 0.5ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/api/new_order?order_id=67&token=sas" for 127.0.0.1 at 2015-05-17 16:51:37 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"sas"}
+  [1m[35mB2bUser Load (11.3ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 40ms (Views: 0.4ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/api/get_token" for 127.0.0.1 at 2015-05-17 16:52:09 -0300
+Processing by ApiController#get_token as HTML
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/get_token?user=Grupo1&pass=pass123" for 127.0.0.1 at 2015-05-17 16:52:12 -0300
+Processing by ApiController#get_token as HTML
+  Parameters: {"user"=>"Grupo1", "pass"=>"pass123"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant ApiController::B2bB2bUser):
+  app/controllers/api_controller.rb:68:in `get_token'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (366.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (343.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (721.4ms)
+
+
+Started GET "/api/get_token?user=Grupo1&pass=pass123" for 127.0.0.1 at 2015-05-17 16:52:36 -0300
+Processing by ApiController#get_token as HTML
+  Parameters: {"user"=>"Grupo1", "pass"=>"pass123"}
+  [1m[36mB2bUser Load (8.6ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 200 OK in 34ms (Views: 0.7ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/api/new_order?order_id=67&token={%22token%22:%22R3J1cG8xcGFzczEyMw==\n%22}" for 127.0.0.1 at 2015-05-17 16:53:08 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"{\"token\":\"R3J1cG8xcGFzczEyMw==\\n\"}"}
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:53:17 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 16:53:20 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw=="}
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw" for 127.0.0.1 at 2015-05-17 16:53:22 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw"}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:53:34 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[35mB2bUser Load (1.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 4ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:54:39 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (7.9ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 26ms (Views: 0.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:54:42 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[35mB2bUser Load (0.5ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 16:54:44 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw=="}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 16:54:46 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw=="}
+  [1m[35mB2bUser Load (1.3ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 4ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw" for 127.0.0.1 at 2015-05-17 16:54:49 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw"}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw" for 127.0.0.1 at 2015-05-17 16:55:26 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw"}
+  [1m[35mB2bUser Load (10.0ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 41ms (Views: 6.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:55:36 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (0.5ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:56:10 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `adad' for #<ApiController:0xb4ddac0c>):
+  app/controllers/api_controller.rb:98:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (375.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (346.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (777.3ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:56:24 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[35mB2bUser Load (9.1ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 34ms (Views: 7.8ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:57:19 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (7.9ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 9.4ms)
+
+NameError (undefined local variable or method `asfs' for #<ApiController:0xd18e8d8>):
+  app/controllers/api_controller.rb:107:in `block in new_order'
+  app/controllers/api_controller.rb:105:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (391.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (329.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (725.9ms)
+
+
+Started PUT "/api/console/repl_sessions/5c039b6da7fcb3373b24171bf21db007" for 127.0.0.1 at 2015-05-17 16:57:28 -0300
+
+
+Started PUT "/api/console/repl_sessions/5c039b6da7fcb3373b24171bf21db007" for 127.0.0.1 at 2015-05-17 16:58:43 -0300
+
+
+Started GET "/api/get_token?user=Grupo1&pass=pass123" for 127.0.0.1 at 2015-05-17 16:59:09 -0300
+Processing by ApiController#get_token as HTML
+  Parameters: {"user"=>"Grupo1", "pass"=>"pass123"}
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/console/repl_sessions/5c039b6da7fcb3373b24171bf21db007" for 127.0.0.1 at 2015-05-17 16:59:18 -0300
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 16:59:27 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `asfs' for #<ApiController:0xb49e5cc8>):
+  app/controllers/api_controller.rb:107:in `block in new_order'
+  app/controllers/api_controller.rb:105:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (353.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (337.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (711.7ms)
+
+
+Started PUT "/api/console/repl_sessions/7463aeabe9cd7c714af354a74a966024" for 127.0.0.1 at 2015-05-17 16:59:34 -0300
+
+
+Started PUT "/api/console/repl_sessions/7463aeabe9cd7c714af354a74a966024" for 127.0.0.1 at 2015-05-17 16:59:41 -0300
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 17:01:20 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[35mB2bUser Load (7.9ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 10.4ms)
+
+NameError (undefined local variable or method `asfs' for #<ApiController:0xce255c0>):
+  app/controllers/api_controller.rb:107:in `block in new_order'
+  app/controllers/api_controller.rb:105:in `new_order'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (379.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (342.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (726.5ms)
+
+
+Started PUT "/api/console/repl_sessions/8e9b2f99309fdcc60f69e655efe5504e" for 127.0.0.1 at 2015-05-17 17:01:28 -0300
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==\n" for 127.0.0.1 at 2015-05-17 17:03:01 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw==\\n"}
+  [1m[36mB2bUser Load (7.5ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 40ms (Views: 0.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/new_order?order_id=67&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:03:06 -0300
+Processing by ApiController#new_order as HTML
+  Parameters: {"order_id"=>"67", "token"=>"R3J1cG8xcGFzczEyMw=="}
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/get_token?user=Grupo1&pass=pass123" for 127.0.0.1 at 2015-05-17 17:03:17 -0300
+Processing by ApiController#get_token as HTML
+  Parameters: {"user"=>"Grupo1", "pass"=>"pass123"}
+  [1m[36mB2bUser Load (0.5ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/new_order?order_id=12&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:04:41 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"order_id"=>"12", "token"=>"R3J1cG8xcGFzczEyMw==", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[35mB2bUser Load (9.1ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 34ms (Views: 1.0ms | ActiveRecord: 10.2ms)
+
+
+Started POST "/api/order_canceled?order_id=12&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:05:06 -0300
+
+ActionController::RoutingError (No route matches [POST] "/api/order_canceled"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (391.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1595.3ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xb0c190c @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xb0c1768 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xb0c1c40 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started DELETE "/api/order_canceled?order_id=12&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:05:15 -0300
+Processing by ApiController#order_canceled as */*
+  Parameters: {"order_id"=>"12", "token"=>"R3J1cG8xcGFzczEyMw==", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 500 Internal Server Error in 6ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/order_canceled?order_id=12&token=RJ1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:05:21 -0300
+Processing by ApiController#order_canceled as */*
+  Parameters: {"order_id"=>"12", "token"=>"RJ1cG8xcGFzczEyMw==", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 401 Unauthorized in 5ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/invoice_paid?invoice_id=12&token=RJ1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:05:55 -0300
+
+ActionController::RoutingError (No route matches [DELETE] "/api/invoice_paid"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (534.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1421.9ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xb0c190c @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xb0c1768 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xb0c1c40 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started PUT "/api/invoice_paid?invoice_id=12&token=RJ1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:06:00 -0300
+Processing by ApiController#invoice_paid as */*
+  Parameters: {"invoice_id"=>"12", "token"=>"RJ1cG8xcGFzczEyMw==", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[36mB2bUser Load (0.4ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+Completed 401 Unauthorized in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/invoice_paid?invoice_id=12&token=R3J1cG8xcGFzczEyMw==" for 127.0.0.1 at 2015-05-17 17:06:06 -0300
+Processing by ApiController#invoice_paid as */*
+  Parameters: {"invoice_id"=>"12", "token"=>"R3J1cG8xcGFzczEyMw==", "api"=>{}}
+Can't verify CSRF token authenticity
+  [1m[35mB2bUser Load (0.6ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 500 Internal Server Error in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms)

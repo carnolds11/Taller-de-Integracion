@@ -2,6 +2,8 @@ class ApiController < ApplicationController
     #skip CSRF token request
     protect_from_forgery with: :null_session
 
+    require "base64"
+
     #POST /api/register_group
     def register_group
      @token
@@ -33,7 +35,8 @@ class ApiController < ApplicationController
             @new_user.save
 
             ###############get token##############
-            
+            @token = @user + @pass
+            @token = Base64.strict_encode64(@token)
             #response['Status Code'] = '201 CREATED'
             @status = 201
             @body = {"success": true,"message": "Su usuario ha sido creado exitosamente.","token": @token}
@@ -73,6 +76,8 @@ class ApiController < ApplicationController
             if @login_ok == 1
                 
             ###############get token##############
+            @token = @user + @pass
+            @token = Base64.strict_encode64(@token)
                 @status = 200
                 @body = {"token":@token}
 
@@ -90,7 +95,6 @@ class ApiController < ApplicationController
     def new_order
         @order_id = params['order_id']
         @token = params['token']
-        
         #verify params presence
         if !@order_id || !@token
             @status = 400
@@ -98,7 +102,15 @@ class ApiController < ApplicationController
         else
 
             #verify token
+            B2bUser.all.each do |user|
+                @saved_token = Base64.strict_encode64(user.username + user.password)
+                if @saved_token == @token
+                    @user = user
+                end
+            end
             #if token OK
+
+            if @user != nil
 
                 #verify order
                 #if order OK
@@ -116,11 +128,11 @@ class ApiController < ApplicationController
                 #end
 
             #else if token not OK
-
+            else
                 @status = 401
                 @body = {"success":false,"message":"El token no es válido."}
 
-            #end
+            end
 
         end
 
@@ -167,7 +179,14 @@ class ApiController < ApplicationController
             @body = {"order_id":["Este campo es requerido."],"token":["Este campo es requerido."]}
         else
             #verify token
+            B2bUser.all.each do |user|
+                @saved_token = Base64.strict_encode64(user.username + user.password)
+                if @saved_token == @token
+                    @user = user
+                end
+            end
             #if token OK
+            if @user != nil
                 #verify order
                 #if order OK
 
@@ -183,11 +202,12 @@ class ApiController < ApplicationController
                 #end
 
             #else if token not OK
+            else
 
                 @status = 401
                 @body = {"success":false,"message":"El token no es válido."}
 
-            #end
+            end
        end
 
        render :json => @body, status: @status
@@ -289,7 +309,14 @@ class ApiController < ApplicationController
             @body = {"order_id":["Este campo es requerido."],"token":["Este campo es requerido."]}
         else
             #verify token
+            B2bUser.all.each do |user|
+                @saved_token = Base64.strict_encode64(user.username + user.password)
+                if @saved_token == @token
+                    @user = user
+                end
+            end
             #if token OK
+            if @user != nil
 
                 #verify invoice
                 #if invoice OK
@@ -304,11 +331,12 @@ class ApiController < ApplicationController
                 #end
 
              #else if token not OK
+            else
 
                     @status = 401
                     @body = {"success": false,"message": "El token no es válido."}
 
-            #end
+            end
 
         end
 
