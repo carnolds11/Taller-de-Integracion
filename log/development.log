@@ -12335,3 +12335,730 @@ NameError (undefined local variable or method `sada' for #<ApiController:0xd3e6e
 
 Started PUT "/api/console/repl_sessions/419ff45d7bdc9b24600312f8f98c2f30" for 127.0.0.1 at 2015-05-16 16:43:48 -0300
   [1m[36mB2bUser Load (1.2ms)[0m  [1mSELECT "b2b_users".* FROM "b2b_users"[0m
+
+
+Started GET "/api/get_token?user=Grupo1&pass=pass12" for 127.0.0.1 at 2015-05-17 01:38:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApiController#get_token as */*
+  Parameters: {"user"=>"Grupo1", "pass"=>"pass12", "api"=>{}}
+  [1m[35mB2bUser Load (0.4ms)[0m  SELECT "b2b_users".* FROM "b2b_users"
+Completed 400 Bad Request in 80ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/get_token" for 127.0.0.1 at 2015-05-17 01:38:51 -0300
+Processing by ApiController#get_token as */*
+  Parameters: {"api"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/regi" for 127.0.0.1 at 2015-05-17 01:38:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/api/regi"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (258.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1367.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/api/register_group" for 127.0.0.1 at 2015-05-17 01:39:06 -0300
+
+ActionController::RoutingError (No route matches [GET] "/api/register_group"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (195.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1126.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group" for 127.0.0.1 at 2015-05-17 01:39:10 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1528ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/register_group, application/register_group with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :rabl], :versions=>[:v10, :v9, :v8, :v7, :v6, :v5, :v4, :v3, :v2, :v1]}. Searched in:
+  * "/home/user/Repository/Taller-de-Integracion/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_frontend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_backend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_api-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_core-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/kaminari-0.16.3/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (339.4ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group" for 127.0.0.1 at 2015-05-17 01:39:49 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1518ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/register_group, application/register_group with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :rabl], :versions=>[:v10, :v9, :v8, :v7, :v6, :v5, :v4, :v3, :v2, :v1]}. Searched in:
+  * "/home/user/Repository/Taller-de-Integracion/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_frontend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_backend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_api-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_core-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/kaminari-0.16.3/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (337.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group" for 127.0.0.1 at 2015-05-17 01:39:54 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1595ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/register_group, application/register_group with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :rabl], :versions=>[:v10, :v9, :v8, :v7, :v6, :v5, :v4, :v3, :v2, :v1]}. Searched in:
+  * "/home/user/Repository/Taller-de-Integracion/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_frontend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_backend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_api-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_core-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/kaminari-0.16.3/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (335.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group" for 127.0.0.1 at 2015-05-17 01:40:50 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1548ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/register_group, application/register_group with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :rabl], :versions=>[:v10, :v9, :v8, :v7, :v6, :v5, :v4, :v3, :v2, :v1]}. Searched in:
+  * "/home/user/Repository/Taller-de-Integracion/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_auth_devise-d2ee454e2174/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/backend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/bundler/gems/spree_gateway-fc1940d30748/lib/views/frontend"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_frontend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_backend-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_api-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/spree_core-3.0.1/app/views"
+  * "/home/user/.rvm/gems/ruby-2.2.1/gems/kaminari-0.16.3/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.8ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (361.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/register_group" for 127.0.0.1 at 2015-05-17 01:41:43 -0300
+Processing by ApiController#register_group as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/get_token" for 127.0.0.1 at 2015-05-17 01:42:11 -0300
+Processing by ApiController#get_token as */*
+  Parameters: {"api"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/new_order" for 127.0.0.1 at 2015-05-17 01:42:20 -0300
+
+ActionController::RoutingError (No route matches [GET] "/api/new_order"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (216.3ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1222.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/new_order" for 127.0.0.1 at 2015-05-17 01:42:27 -0300
+Processing by ApiController#new_order as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/api/order_accepted" for 127.0.0.1 at 2015-05-17 01:42:37 -0300
+Processing by ApiController#order_accepted as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `r' for #<ApiController:0xad38fc4>):
+  app/controllers/api_controller.rb:137:in `order_accepted'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (354.3ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0xad116cc @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xad11528 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0xad03e14 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started PUT "/api/order_accepted" for 127.0.0.1 at 2015-05-17 01:43:02 -0300
+Processing by ApiController#order_accepted as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/order_canceled" for 127.0.0.1 at 2015-05-17 01:43:17 -0300
+Processing by ApiController#order_canceled as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/order_rejected" for 127.0.0.1 at 2015-05-17 01:43:24 -0300
+Processing by ApiController#order_rejected as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/new_invoice" for 127.0.0.1 at 2015-05-17 01:43:36 -0300
+Processing by ApiController#new_invoice as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/invoice_rejected" for 127.0.0.1 at 2015-05-17 01:43:49 -0300
+Processing by ApiController#invoice_rejected as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/api/invoice_paid" for 127.0.0.1 at 2015-05-17 01:44:02 -0300
+Processing by ApiController#invoice_paid as */*
+  Parameters: {"api"=>{}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)

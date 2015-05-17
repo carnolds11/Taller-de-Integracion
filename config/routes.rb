@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   post "api/register_group" => 'api#register_group'
-  get 'api/register_group' => 'api#register_group'
   get 'api/get_token' => 'api#get_token'
   post 'api/new_order' => 'api#new_order'
   put 'api/order_accepted' => 'api#order_accepted'
